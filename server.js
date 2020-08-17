@@ -6,6 +6,9 @@ const app = express();
 //connect to the Database
 connectDB();
 
+//init middleware
+app.use(express.json({extended: false}))
+
 app.get("/", (req, res) => {
   res.json({ msg: "Welcome to the Contact Room API" });
 });
