@@ -61,6 +61,7 @@ const ContactForm = () => {
         value={name}
         onChange={onChange}
         placeholder="Name"
+        required
       />
       <input
         type="email"
@@ -68,6 +69,7 @@ const ContactForm = () => {
         value={email}
         onChange={onChange}
         placeholder="Email"
+        required
       />
       <input
         type="text"
@@ -75,6 +77,8 @@ const ContactForm = () => {
         value={phone}
         onChange={onChange}
         placeholder="Phone"
+        required
+        minLength="11"
       />
       <h5>Contact Type</h5>
       <input
