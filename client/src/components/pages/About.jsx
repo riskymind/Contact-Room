@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -8,6 +9,10 @@ const About = () => {
       <p>
         <strong>Version:</strong>1.0.0
       </p>
+
+      <Link to="/">
+        <button className="btn btn-secondary">Go to HomePage</button>
+      </Link>
     </div>
   );
 };
